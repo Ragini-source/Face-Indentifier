@@ -1,0 +1,12 @@
+body {
+         margin:0px;
+}
+#result{
+         height: 350px;
+         width: 350px;
+}
+
+.col.md-4{
+         height: 350px;
+         width: 350px;
+}

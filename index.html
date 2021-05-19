@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+         <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+         <link rel="stylesheet" href="style.css">
+
+         <title>Face Identifier</title>
+</head>
+
+<body>
+         <center>
+                  <div class="col-md-4 col-sm-12 col-xs-12">
+                           <label>Snapshot - </label>
+                           <div id="camera"></div>
+                           <br>
+                           <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button>
+                           <br><br>
+
+                  </div>
+                  <div class="col-md-4 col-sm-12 col-xs-12">
+                           <label>Snapshot - </label>
+                           <div id="result"></div>
+                           <br>
+                           <button onclick="check();" class="btn btn-success">Predict Face</button>
+                           <br><br>
+                           <p style="font-size: 22px;">Face : </p><span id="object_name"></span>
+                           <p style="font-size: 22px;">Accuracy : </p><span id="object_accuracy"></span>
+
+                  </div>
+
+         </center>
+         <script src="script.js"></script>
+</body>
+
+</html>
